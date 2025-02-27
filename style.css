@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+}
+
+:root {
+    --sportc-bg: #DB3A34;
+    --luxury-bg: #67697C;
+    --utility-bg: #32936F;
+    --sportb-bg: #F46036;
+    --cruiser-bg: #717EC3;
+    --adventure-bg: #5FAD56;
+}
+
+body {
+    background-color: aliceblue;
+    font-size: 1.75rem;
+}
+
+.main {
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.article {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.article>div {
+    padding: 2rem;
+    width: 35ch;
+    text-align: center;
+}
+
+.article h1 {
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    padding-block: 0.5rem;
+}
+
+.article p {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.article button {
+    padding: 1rem;
+    margin: 1rem 0 0 0;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.article button:hover {
+    scale: 1.05;
+}
+
+.article button a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-family: "Acme", sans-serif;
+}
+
+.article_sportcar {
+    background-color: var(--sportc-bg);
+    border-radius: 5px 0 0 5px;
+}
+
+.article_sportcar a {
+    color: var(--sportc-bg);
+}
+
+.article_luxury {
+    background-color: var(--luxury-bg);
+}
+
+.article_luxury a {
+    color: var(--luxury-bg);
+}
+
+.article_utility {
+    background-color: var(--utility-bg);
+    border-radius: 0 5px 5px 0;
+}
+
+.article_utility a {
+    color: var(--utility-bg);
+}
+
+.article_sportbike {
+    background-color: var(--sportb-bg);
+    border-radius: 5px 0 0 5px;
+}
+
+.article_sportbike a {
+    color: var(--sportb-bg);
+}
+
+.article_cruiser {
+    background-color: var(--cruiser-bg);
+}
+
+.article_cruiser a {
+    color: var(--cruiser-bg);
+}
+
+.article_adventure {
+    background-color: var(--adventure-bg);
+    border-radius: 0 5px 5px 0;
+}
+
+.article_adventure a {
+    color: var(--adventure-bg);
+}
+
+@media (max-width: 35rem) {
+    body {
+        font-size: 1.25rem;
+    }
+
+    .main {
+        height: auto;
+        margin-block: 1rem;
+    }
+
+    .article {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .article_sportcar {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .article_utility {
+        border-radius: 0 0 5px 5px;
+    }
+
+    .article_sportbike {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .article_adventure {
+        border-radius: 0 0 5px 5px;
+    }
+}
